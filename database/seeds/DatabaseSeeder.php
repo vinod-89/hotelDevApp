@@ -22,7 +22,7 @@ class UsersTableSeeder extends Seeder {
     {
         DB::table('users')->delete();
 
-        User::create(['email' => 'foo@bar.com', 'name' => 'Admin', 'password' => 'admin@123']);
+        User::create(['email' => 'admin@admin.com', 'name' => 'Admin', 'password' => 'admin']);
         User::create(['email' => 'john@doe.com', 'name' => 'John', 'password' => 'doe']);
 
     }

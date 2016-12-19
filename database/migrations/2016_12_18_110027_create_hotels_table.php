@@ -16,12 +16,13 @@ class CreateHotelsTable extends Migration
         Schema::create('hotels', function (Blueprint $table) {
             $table->increments('id', true);
             $table->string('name');
-            
+            $table->timestamps();
+
         });
 
         Schema::table('hotels', function($table) {
             $table->integer('comment_id')->unsigned();
-            $table->foreign('comment_id')->references('id')->on('comments'); 
+            $table->foreign('comment_id')->references('id')->on('comments');
         });
     }
 

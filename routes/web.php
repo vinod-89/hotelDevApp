@@ -11,10 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/','AdminController@getHotelList');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index');
+//  Route::get('/home', 'AdminController@index');
+
+Route::get('/admin', 'AdminController@viewHotel');
+
+Route::post('/createhotel', 'AdminController@createHotel');

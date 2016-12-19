@@ -59,7 +59,7 @@ return [
             'unix_socket' => '/Applications/MAMP/tmp/mysql/mysql.sock',
             'database' => env('DB_DATABASE', 'hotel_dev_app'),
             'username' => env('DB_USERNAME', 'root'),
-            'password' => env('DB_PASSWORD', 'root'),
+            'password' => env('DB_PASSWORD', ''),
             'charset' => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix' => '',
